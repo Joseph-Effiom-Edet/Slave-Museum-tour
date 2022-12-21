@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar-container {
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E44A2D', endColorstr='#241E20', GradientType=0 );
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  padding: 0 50px;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #f5c645;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.buttons button {
+  border: 1px solid #f5c645;
+  background-color: #f5c645;
+  color: #241e20;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  border: 1px solid #241e20;
+  background-color: #241e20;
+  color: #f5c645;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero-container {
+  background-color: #f5c645;
+  padding: 0 50px;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrapper video {
+  flex: 2;
+  padding-right: 150px;
+}
+
+.hero-wrapper h1 {
+  flex: 1;
+  color: #241e20;
+  font-size: 50px;
+}
+
+.form-container {
+  background-color: #e44a2d;
+}
+
+/* Style the form */
+
+#regForm {
+  background-color: #e44a2d;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px;
+}
+
+.fill-form {
+  color: #241e20;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 20px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* .checkbox {
+  display: flex;
+} */
+
+.checkbox input {
+  width: 10px;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  padding: 20px 0;
+}
+
+.tab span {
+  font-size: 20px;
+  font-weight: 900;
+  color: #241e20;
+}
+
+#prevBtn {
+  border: 1px solid #f5c645;
+  background-color: #f5c645;
+  color: #241e20;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#nextBtn {
+  border: 1px solid #241e20;
+  background-color: #241e20;
+  color: #f5c645;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #f5c645;
+}
+
+/*BOTTOM SECTION STYLES*/
+.bottom-container {
+  background-color: #f5c645;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-wrapper {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bottom-text h1 {
+  font-size: 50px;
+  color: #241e20;
+}
+
+.bottom-form {
+  flex: 2;
+}
+
+.bottom-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 550px;
+}
+
+.bottom-form form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-form form div label {
+  font-weight: 600;
+  font-size: 20px;
+  color: #241e20;
+}
+
+.bottom-form form div input {
+  height: 30px;
+  border: 1px solid #241e20;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  color: #241e20;
+}
+
+.bottom-form form div .textarea {
+  height: 100px;
+  border: 1px solid #241e20;
+  border-radius: 30px;
+  padding: 10px;
+  color: #241e20;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+}
+
+.bottom-form form button {
+  background-color: #e44a2d;
+  border: 1px solid #e44a2d;
+  color: #241e20;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 40px;
+}
+
+.icons {
+  margin-left: 70px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  background-color: #e44a2d;
+  border-radius: 30px;
+}
+
+.footer-container {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241E20', endColorstr='#E44A2D', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-media-logos img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.footer-text p {
+  color: #f5c645;
+  font-weight: 600;
+}
+
+@media (max-width: 712px) {
+  /*NAV BAR STYLES*/
+  .navbar-container {
+    padding: 0 10px;
+  }
+
+  .nav-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f5c645;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .buttons button {
+    border: 1px solid #f5c645;
+    background-color: #f5c645;
+    color: #241e20;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .hero-container {
+    background-color: #f5c645;
+    padding: 0 10px;
+  }
+
+  .hero-wrapper {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-wrapper video {
+    flex: 1;
+    padding-right: 10px;
+    width: 340px;
+    height: 350px;
+    margin-left: 10px;
+  }
+
+  .hero-wrapper h1 {
+    display: none;
+  }
+
+  .form-container {
+    background-color: #e44a2d;
+    padding: 20px 0;
+  }
+
+  #regForm {
+    background-color: #e44a2d;
+    padding-left: 10px;
+    padding-right: 30px;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+  }
+
+  .fill-form {
+    color: #241e20;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .bottom-container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-wrapper {
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+  }
+
+  .bottom-text h1 {
+    font-size: 15px;
+  }
+
+  .bottom-form form {
+    width: 275px;
+  }
+
+  .bottom-form form div label {
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .bottom-form form div input {
+    height: 15px;
+    font-size: 13px;
+  }
+
+  .bottom-form form div .textarea {
+    height: 50px;
+  }
+
+  .bottom-form form button {
+    font-size: 15px;
+  }
+
+  .icons {
+    margin-left: 0;
+  }
+}
