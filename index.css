@@ -95,16 +95,52 @@ a {
   flex: 1;
   color: #241e20;
   font-size: 50px;
+  padding-left: 50px;
 }
 
 .form-container {
-  background-color: #e44a2d;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241E20', endColorstr='#E44A2D', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
 }
 
 /* Style the form */
 
 #regForm {
-  background-color: #e44a2d;
+  background-color: transparent;
   padding: 20px;
   width: 80%;
   margin: 0 auto;
@@ -149,6 +185,11 @@ input.invalid {
   font-size: 20px;
   font-weight: 900;
   color: #241e20;
+}
+
+.success {
+  display: none;
+  font-size: 25px;
 }
 
 #prevBtn {
@@ -294,39 +335,29 @@ input.invalid {
   /* ff 3.6+ */
   background: -moz-linear-gradient(
     90deg,
-    rgba(228, 74, 45, 1) 0%,
-    rgba(36, 30, 32, 1) 100%
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
   );
-
-  /* safari 5.1+,chrome 10+ */
   background: -webkit-linear-gradient(
     90deg,
-    rgba(228, 74, 45, 1) 0%,
-    rgba(36, 30, 32, 1) 100%
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
   );
-
-  /* opera 11.10+ */
   background: -o-linear-gradient(
     90deg,
-    rgba(228, 74, 45, 1) 0%,
-    rgba(36, 30, 32, 1) 100%
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
   );
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241E20', endColorstr='#E44A2D', GradientType=0 );
-
-  /* ie 10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E44A2D', endColorstr='#241E20', GradientType=0 );
   background: -ms-linear-gradient(
     90deg,
-    rgba(228, 74, 45, 1) 0%,
-    rgba(36, 30, 32, 1) 100%
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
   );
-
-  /* global 94%+ browsers support */
   background: linear-gradient(
     90deg,
-    rgba(228, 74, 45, 1) 0%,
-    rgba(36, 30, 32, 1) 100%
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
   );
   display: flex;
   justify-content: center;
@@ -394,7 +425,7 @@ input.invalid {
     align-items: center;
   }
 
-  .hero-wrapper video {
+  iframe {
     flex: 1;
     padding-right: 10px;
     width: 340px;
@@ -412,9 +443,8 @@ input.invalid {
   }
 
   #regForm {
-    background-color: #e44a2d;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 30px;
     width: 80%;
     margin: 0 auto;
     min-width: 300px;

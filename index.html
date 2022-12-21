@@ -24,17 +24,15 @@
     <!--Hero section-->
     <div class="hero-container">
       <div class="hero-wrapper">
-        <video
-          width="600"
+        <iframe
+          width="900"
           height="500"
-          autoplay=""
-          loop=""
-          playsinline=""
-          id="vid"
-          preload="auto"
-        >
-          <source src="./assets/lv_0_20221220183504.mp4" type="video/mp4" />
-        </video>
+          src="https://www.youtube.com/embed/y70yZ9M4Ykw?controls=0?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&loop=1&controls=0&autoplay=1&playlist=y70yZ9M4Ykw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <h1>
           The Journey of no return. <br />
           Break the spell!
@@ -284,7 +282,7 @@
               <label for="sixteenth">New Year’s Eve Party House </label>
             </p>
           </div>
-
+          <div class="success" id="success">Successfully Submitted!</div>
           <div style="overflow: auto">
             <div style="float: right">
               <button type="button" id="prevBtn" onclick="nextPrev(-1)">
