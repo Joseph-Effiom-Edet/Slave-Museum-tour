@@ -135,7 +135,8 @@ input.invalid {
 } */
 
 .checkbox input {
-  width: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 /* Hide all steps by default: */
@@ -230,7 +231,7 @@ input.invalid {
 .bottom-form form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   width: 550px;
 }
 
@@ -413,7 +414,7 @@ input.invalid {
   #regForm {
     background-color: #e44a2d;
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 10px;
     width: 80%;
     margin: 0 auto;
     min-width: 300px;
@@ -439,6 +440,7 @@ input.invalid {
 
   .bottom-text h1 {
     font-size: 15px;
+    text-align: center;
   }
 
   .bottom-form form {

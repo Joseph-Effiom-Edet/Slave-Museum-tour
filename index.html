@@ -16,9 +16,6 @@
     <div class="navbar-container">
       <div class="navbar-wrapper">
         <img src="./assets/TRIBAL II.png" alt="" class="nav-logo" />
-        <div class="nav-links">
-          <a href="#form-section">Create custom package</a>
-        </div>
         <div class="buttons">
           <a href="#contact"> <button>Contact Us</button></a>
         </div>
@@ -27,7 +24,16 @@
     <!--Hero section-->
     <div class="hero-container">
       <div class="hero-wrapper">
-        <video width="600" height="500" autoplay loop muted>
+        <video
+          width="600"
+          height="500"
+          autoplay=""
+          muted=""
+          loop=""
+          playsinline=""
+          id="vid"
+          preload="auto"
+        >
           <source src="./assets/lv_0_20221220183504.mp4" type="video/mp4" />
         </video>
         <h1>
@@ -48,30 +54,75 @@
           <!-- One "tab" for each step in the form: -->
           <div class="tab">
             <p>
-              <input placeholder="King's Name" oninput="this.className = ''" />
+              <input placeholder="Your Name" oninput="this.className = ''" />
             </p>
             <p>
               <input
-                placeholder="King's Phone Number"
+                placeholder="Your Number"
                 oninput="this.className = ''"
                 type="tel"
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               />
             </p>
             <p>
-              <input placeholder="Queen's name" oninput="this.className = ''" />
+              <input
+                placeholder="Alternate Number"
+                oninput="this.className = ''"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
             </p>
             <p>
               <input
-                placeholder="Queen's Phone Number"
+                placeholder="Email"
                 oninput="this.className = ''"
-                type="tel"
+                type="email"
+              />
+            </p>
+            <p>
+              <input
+                placeholder="How many is on your party?"
+                oninput="this.className = ''"
+                type="number"
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               />
             </p>
           </div>
 
           <div class="tab">
+            <span>Slave Tour Package</span>
+            <p>
+              5hr VIP Tour of all museums <br />
+              Light Lunch <br />
+              Photo <br />
+              Gift Souvenir Book <br />
+              $150pp with transportation <br />
+              $130pp without transportation
+            </p>
+
+            <span
+              >Group Tours are held on Tuesdays and Thursdays. Which day do you
+              prefer?</span
+            >
+            <p class="checkbox">
+              <input
+                id="third"
+                placeholder="Phone..."
+                oninput="this.className = ''"
+                type="checkbox"
+              />
+              <label for="third">Tuesday</label>
+            </p>
+            <p class="checkbox">
+              <input
+                id="forth"
+                placeholder="Phone..."
+                oninput="this.className = ''"
+                type="checkbox"
+              />
+              <label for="forth">Thursday</label>
+            </p>
+
             <span>Who are you planning for?</span>
             <p class="checkbox">
               <input
@@ -91,33 +142,16 @@
               />
               <label for="second">We like to join the TGW Group </label>
             </p>
-            <span>Which day do you prefer?</span>
             <p class="checkbox">
               <input
-                id="third"
+                id="seconded"
                 placeholder="Phone..."
                 oninput="this.className = ''"
                 type="checkbox"
               />
-              <label for="third">Tuesday</label>
-            </p>
-            <p class="checkbox">
-              <input
-                id="forth"
-                placeholder="Phone..."
-                oninput="this.className = ''"
-                type="checkbox"
-              />
-              <label for="forth">Thursday</label>
-            </p>
-            <span>Slave Tour Package</span>
-            <p>
-              5hr VIP Tour of all museums <br />
-              Light Lunch <br />
-              Photo <br />
-              Gift Souvenir Book <br />
-              $150pp with transportation <br />
-              $130pp without transportation
+              <label for="seconded"
+                >We have our own group of 10 and want the group discount.</label
+              >
             </p>
           </div>
 
