@@ -58,9 +58,7 @@ function validateForm() {
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   email = document.getElementById("myEmail");
 
-  if (email.value.match(validRegex)) {
-    alert("Valid email address!");
-  } else {
+  if (!email.value.match(validRegex)) {
     alert("Invalid email address!");
     window.location.reload();
   }

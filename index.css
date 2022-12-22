@@ -176,6 +176,14 @@ input.invalid {
   height: 15px;
 }
 
+label {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
 /* Hide all steps by default: */
 .tab {
   display: none;
