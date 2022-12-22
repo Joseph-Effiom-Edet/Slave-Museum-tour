@@ -24,15 +24,9 @@
     <!--Hero section-->
     <div class="hero-container">
       <div class="hero-wrapper">
-        <iframe
-          width="900"
-          height="500"
-          src="https://www.youtube.com/embed/y70yZ9M4Ykw?controls=0?rel=0&modestbranding=1&autohide=1&mute=0&showinfo=0&loop=1&controls=0&autoplay=1&playlist=y70yZ9M4Ykw"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <video autoplay controls loop plays-inline width="500" height="500">
+          <source src="./assets/lv_0_20221220183504.mp4" />
+        </video>
         <h1>
           The Journey of no return. <br />
           Break the spell!
@@ -43,42 +37,42 @@
     <div id="form-section" class="form-container">
       <div class="form-wrapper">
         <form id="regForm" action="">
-          <h1 class="fill-form">
-            Please fill out the form to create your custom package that features
-            a life-changing tour.
-          </h1>
-
           <!-- One "tab" for each step in the form: -->
           <div class="tab">
+            <h1 class="fill-form">
+              Please fill out the form to create your custom package that
+              features a life-changing tour.
+            </h1>
             <p>
               <input placeholder="Your Name" oninput="this.className = ''" />
             </p>
             <p>
               <input
                 placeholder="Your Number"
-                oninput="this.className = ''"
+                pattern="[0-9]+"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                 type="tel"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               />
             </p>
             <p>
               <input
                 placeholder="Alternate Number"
-                oninput="this.className = ''"
+                pattern="[0-9]+"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                 type="tel"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               />
             </p>
             <p>
               <input
+                required
+                pattern="^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$"
                 placeholder="Email"
-                oninput="this.className = ''"
                 type="email"
               />
             </p>
             <p>
               <input
-                placeholder="How many is on your party?"
+                placeholder="How many is in your party?"
                 oninput="this.className = ''"
                 type="number"
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
@@ -87,15 +81,14 @@
           </div>
 
           <div class="tab">
-            <span>Slave Tour Package</span>
-            <p>
-              5hr VIP Tour of all museums <br />
-              Light Lunch <br />
-              Photo <br />
-              Gift Souvenir Book <br />
-              $150pp with transportation <br />
-              $130pp without transportation
-            </p>
+            <span class="slave-tour-title">SLAVE TOUR PACKAGE</span>
+            <ul>
+              <li>5hr VIP Tour of all museums</li>
+              <li>Light Lunch</li>
+              <li>Photo</li>
+              <li>Gift Souvenir Book</li>
+              <li>Price: $125pp</li>
+            </ul>
 
             <span
               >Group Tours are held on Tuesdays and Thursdays. Which day do you
@@ -154,11 +147,12 @@
 
           <div class="tab">
             <span
-              >Badagry Slave Museum is about 3-4hr straight drive from Lagos,
-              Nigeria. However, the preferred transportation is a drive to the
-              docks on the Island and then a 2hr boat ride. Then bike
-              transportation once you arrive at Badagry. <br />
-              Please select your transportation needs:
+              >The Slave Museum is about 4-5hrs straight drive from Lagos,
+              Nigeria depending on traffic and road conditions. Therefore, the
+              preferred mode of transportation is a drive to the docks on the
+              Island and then a 2hr boar ride. Group travel is included in your
+              price. <br />
+              Please select your preferred transportation needs:
             </span>
             <p class="checkbox">
               <input
@@ -167,7 +161,9 @@
                 oninput="this.className = ''"
                 type="checkbox"
               />
-              <label for="fifth"> We do not need transportation.</label>
+              <label for="fifth"
+                >Group Travel which is already included in price.</label
+              >
             </p>
             <p class="checkbox">
               <input
@@ -176,7 +172,20 @@
                 oninput="this.className = ''"
                 type="checkbox"
               />
-              <label for="sixth">Yes, we need transportation </label>
+              <label for="sixth"
+                >Private Transportation by road only. +$150 roundtrip
+              </label>
+            </p>
+            <p class="checkbox">
+              <input
+                id="sixthed"
+                placeholder="Phone..."
+                oninput="this.className = ''"
+                type="checkbox"
+              />
+              <label for="sixthed"
+                >Will be providing my own transportation
+              </label>
             </p>
             <span>Personalized his & her t-shirts are available. </span>
             <p class="checkbox">
@@ -186,9 +195,7 @@
                 oninput="this.className = ''"
                 type="checkbox"
               />
-              <label for="seventh">
-                Yes, we want t-shirts $75 for the set*</label
-              >
+              <label for="seventh"> Yes, we want t-shirts $35 per shirt*</label>
             </p>
             <p class="checkbox">
               <input
@@ -197,7 +204,7 @@
                 oninput="this.className = ''"
                 type="checkbox"
               />
-              <label for="eight">Yes, we want hoodies $125 for the set*</label>
+              <label for="eight">Yes, we want hoodies $65 per hoodie*</label>
             </p>
             <p class="checkbox">
               <input
@@ -282,7 +289,7 @@
               <label for="sixteenth">New Year’s Eve Party House </label>
             </p>
           </div>
-          <div class="success" id="success">Successfully Submitted!</div>
+          <div class="success" id="success">SUCCESSFULLY SUBMITTED!</div>
           <div style="overflow: auto">
             <div style="float: right">
               <button type="button" id="prevBtn" onclick="nextPrev(-1)">
@@ -325,6 +332,10 @@
             <div>
               <label for="">Last Name</label>
               <input type="text" />
+            </div>
+            <div>
+              <label for="">Phone Number</label>
+              <input type="tel" />
             </div>
             <div>
               <label for="">Email</label>

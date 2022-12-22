@@ -148,7 +148,8 @@ a {
 }
 
 .fill-form {
-  color: #241e20;
+  color: white;
+  margin-bottom: 30px;
 }
 
 /* Style the input fields */
@@ -179,17 +180,25 @@ input.invalid {
 .tab {
   display: none;
   padding: 20px 0;
+  width: 100%;
 }
 
 .tab span {
   font-size: 20px;
   font-weight: 900;
-  color: #241e20;
+  color: white;
+}
+
+.slave-tour-title {
+  margin-left: 40px;
 }
 
 .success {
   display: none;
-  font-size: 25px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-weight: 800;
 }
 
 #prevBtn {
@@ -425,7 +434,7 @@ input.invalid {
     align-items: center;
   }
 
-  iframe {
+  .hero-wrapper video {
     flex: 1;
     padding-right: 10px;
     width: 340px;
@@ -451,7 +460,7 @@ input.invalid {
   }
 
   .fill-form {
-    color: #241e20;
+    color: white;
     font-size: 15px;
     text-align: center;
   }
@@ -469,7 +478,7 @@ input.invalid {
   }
 
   .bottom-text h1 {
-    font-size: 15px;
+    font-size: 35px;
     text-align: center;
   }
 
@@ -496,6 +505,6 @@ input.invalid {
   }
 
   .icons {
-    margin-left: 0;
+    margin-left: 30px;
   }
 }
