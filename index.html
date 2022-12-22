@@ -64,8 +64,9 @@
             </p>
             <p>
               <input
+                id="myEmail"
                 required
-                pattern="^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                 placeholder="Email"
                 type="email"
               />
@@ -365,5 +366,6 @@
       </div>
     </div>
     <script src="index.js"></script>
+    <script src="validateEmail.js"></script>
   </body>
 </html>
