@@ -21,6 +21,8 @@ function showTab(n) {
 
         success.style.display = "block";
       });
+  } else if (n == x.length - 2) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }

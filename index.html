@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <script
-      src="https://kit.fontawesome.com/76ac00d480.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -73,6 +69,7 @@
             </p>
             <p>
               <input
+                id="partyNumber"
                 placeholder="How many is in your party?"
                 oninput="this.className = ''"
                 type="number"
@@ -82,8 +79,9 @@
           </div>
 
           <div class="tab">
-            <span class="slave-tour-title">SLAVE TOUR PACKAGE</span>
-            <ul>
+            <p class="slave-tour-title">SLAVE TOUR PACKAGE</p>
+            <p class="includes">(INCLUDES)</p>
+            <ul class="ul">
               <li>5hr VIP Tour of all museums</li>
               <li>Light Lunch</li>
               <li>Photo</li>
@@ -91,39 +89,18 @@
               <li>Price: $125pp</li>
             </ul>
 
-            <span
-              >Group Tours are held on Tuesdays and Thursdays. Which day do you
-              prefer?</span
-            >
-            <p class="checkbox">
-              <input
-                id="third"
-                placeholder="Phone..."
-                oninput="this.className = ''"
-                type="checkbox"
-              />
-              <label for="third">Tuesday</label>
-            </p>
-            <p class="checkbox">
-              <input
-                id="forth"
-                placeholder="Phone..."
-                oninput="this.className = ''"
-                type="checkbox"
-              />
-              <label for="forth">Thursday</label>
+            <p class="fill">
+              Fill out the form to reserve your VIP Slave Tour.
             </p>
 
-            <span>Who are you planning for?</span>
-            <p class="checkbox">
+            <p class="planning">Who are you planning for?</p>
+            <div class="checkbox">
               <input
                 id="first"
-                placeholder="E-mail..."
-                oninput="this.className = ''"
                 type="checkbox"
               />
               <label for="first">Just us as a couple. </label>
-            </p>
+            </div>
             <p class="checkbox">
               <input
                 id="second"
@@ -144,17 +121,42 @@
                 >We have our own group of 10 and want the group discount.</label
               >
             </p>
+
+            <p class="group-days">
+              TGW Group Tours are held on Tuesdays and Thursdays. Which day do
+              you prefer?
+            </p>
+            <p class="checkbox">
+              <input
+                id="third"
+                placeholder="Phone..."
+                oninput="this.className = ''"
+                type="checkbox"
+              />
+              <label for="third">Tuesday</label>
+            </p>
+            <p class="checkbox">
+              <input
+                id="forth"
+                placeholder="Phone..."
+                oninput="this.className = ''"
+                type="checkbox"
+              />
+              <label for="forth">Thursday</label>
+            </p>
           </div>
 
           <div class="tab">
-            <span
-              >The Slave Museum is about 4-5hrs straight drive from Lagos,
+            <p class="long">
+              The Slave Museum is about 4-5hrs straight drive from Lagos,
               Nigeria depending on traffic and road conditions. Therefore, the
               preferred mode of transportation is a drive to the docks on the
               Island and then a 2hr boar ride. Group travel is included in your
-              price. <br />
+              price.
+            </p>
+            <p class="transport">
               Please select your preferred transportation needs:
-            </span>
+            </p>
             <p class="checkbox">
               <input
                 id="fifth"
@@ -188,7 +190,9 @@
                 >Will be providing my own transportation
               </label>
             </p>
-            <span>Personalized his & her t-shirts are available. </span>
+            <p class="personalise">
+              Personalized his & her t-shirts are available.
+            </p>
             <p class="checkbox">
               <input
                 id="seventh"
@@ -219,7 +223,7 @@
           </div>
 
           <div class="tab">
-            <span>Are you interested in other outings? </span>
+            <p class="outings">Are you interested in other outings?</p>
             <p class="checkbox">
               <input
                 id="tenth"
@@ -289,8 +293,18 @@
               />
               <label for="sixteenth">New Year’s Eve Party House </label>
             </p>
+
+            <p class="subtotal">SubTotal: 
+              <p id="subtotal">
+                <p class="tourPackage">Tour package <span name="times"></span>: <span id="tourPackage"></span></p>
+                <p class="roundTrip">Round Trip Transportation <span name="times"></span>: <span id="roundTrip">$0</span></p>
+                <p class="tShirtsPrice">T-Shirts <span name="times"></span>: <span id="tShirtsPrice">$0</span></p>
+                <p class="hoodiesPrice">Hoodies <span name="times"></span>: <span id="hoodiesPrice">$0</span></p>
+              </p>
+            </p>
+            <p class="total">Total: <span id="total"></span></p>
           </div>
-          <div class="success" id="success">SUCCESSFULLY SUBMITTED!</div>
+          <div class="tab success" id="success">SUCCESSFULLY SUBMITTED!</div>
           <div style="overflow: auto">
             <div style="float: right">
               <button type="button" id="prevBtn" onclick="nextPrev(-1)">
@@ -366,6 +380,6 @@
       </div>
     </div>
     <script src="index.js"></script>
-    <script src="validateEmail.js"></script>
+    <script src="total.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -141,10 +142,9 @@ a {
 
 #regForm {
   background-color: transparent;
-  padding: 20px;
-  width: 80%;
+  padding: 10px;
+  width: 90%;
   margin: 0 auto;
-  min-width: 300px;
 }
 
 .fill-form {
@@ -155,7 +155,7 @@ a {
 /* Style the input fields */
 input {
   padding: 10px;
-  width: 100%;
+  width: 95%;
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
@@ -167,9 +167,10 @@ input.invalid {
   background-color: #ffdddd;
 }
 
-/* .checkbox {
+.checkbox {
   display: flex;
-} */
+  gap: 5px;
+}
 
 .checkbox input {
   width: 15px;
@@ -178,6 +179,7 @@ input.invalid {
 
 label {
   color: white;
+  font-size: 13px;
 }
 
 li {
@@ -187,18 +189,80 @@ li {
 /* Hide all steps by default: */
 .tab {
   display: none;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
 }
 
 .tab span {
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 15px;
+  font-weight: 500;
   color: white;
+  margin-top: 20px;
 }
 
 .slave-tour-title {
-  margin-left: 40px;
+  margin-left: 20px;
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+}
+
+.includes {
+  font-size: 18px;
+  margin-left: 110px;
+  color: white;
+}
+
+.ul {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.fill {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.planning,
+.transport,
+.outings {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: "Quicksand", sans-serif;
+}
+.group-days,
+.personalise {
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.long {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.subtotal,
+.total {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.tourPackage,
+.roundTrip,
+.tShirtsPrice,
+.hoodiesPrice {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .success {
@@ -456,15 +520,14 @@ li {
 
   .form-container {
     background-color: #e44a2d;
-    padding: 20px 0;
+    padding: 0;
   }
 
   #regForm {
     padding-left: 10px;
-    padding-right: 30px;
-    width: 80%;
-    margin: 0 auto;
-    min-width: 300px;
+    padding-right: 10px;
+    width: 90%;
+    margin: 0 0;
   }
 
   .fill-form {
