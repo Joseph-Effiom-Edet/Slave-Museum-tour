@@ -273,7 +273,9 @@ li {
   font-weight: 800;
 }
 
-#prevBtn {
+#prevBtn,
+#myBtn,
+#Check {
   border: 1px solid #f5c645;
   background-color: #f5c645;
   color: #241e20;
@@ -282,6 +284,7 @@ li {
   border-radius: 30px;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 #nextBtn {
@@ -317,6 +320,239 @@ li {
   background-color: #f5c645;
 }
 
+/*Description section*/
+.description-container {
+  border-top: 15px solid #f5c645;
+  padding: 20px 50px;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E44A2D', endColorstr='#241E20', GradientType=0 );
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+}
+
+.about {
+  width: 50%;
+}
+
+.about-heading {
+  color: white;
+}
+
+.about-desc {
+  color: white;
+}
+
+#more {
+  display: none;
+}
+
+.pricing {
+  margin-top: 40px;
+}
+
+.price {
+  color: white;
+}
+
+.dollar {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.details {
+  margin: 40px 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.detail-item img {
+  width: 25px;
+  height: 25px;
+}
+
+.detail-item p {
+  color: white;
+}
+
+.collapsible {
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.content {
+  padding: 0 18px 3px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 2px solid #241e20;
+}
+
+.content p {
+  color: white;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.content ul {
+  margin-top: 20px;
+}
+
+.content ul li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.content-item img {
+  width: 25px;
+  height: 25px;
+}
+
+.content-item p {
+  color: white;
+}
+
+.last-content {
+  margin-top: 10px;
+}
+
+/*Similar experiences section*/
+.similar-experiences-container {
+  padding: 20px 50px;
+  border-top: 15px solid #f5c645;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241E20', endColorstr='#E44A2D', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(228, 74, 45, 1) 0%,
+    rgba(36, 30, 32, 1) 100%
+  );
+}
+
+.similar-experiences-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.similar-experiences-heading {
+  color: white;
+  font-size: 40px;
+}
+
+.similar-experiences-item-wrapper {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 30px;
+}
+
+.similar-experiences-item-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.similar-experiences-item {
+  position: relative;
+}
+
+.similar-experiences-item img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.similar-experiences-item p {
+  color: white;
+  font-size: 20px;
+}
+
+.fav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.fav img {
+  width: 25px;
+  height: 25px;
+}
 /*BOTTOM SECTION STYLES*/
 .bottom-container {
   background-color: #f5c645;
@@ -534,6 +770,63 @@ li {
     color: white;
     font-size: 15px;
     text-align: center;
+  }
+
+  .description-container {
+    padding: 20px 10px;
+  }
+
+  .about {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .pricing {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .price {
+    width: 30%;
+  }
+
+  .similar-experiences-container {
+    padding: 20px 10px;
+  }
+
+  .similar-experiences-heading {
+    color: white;
+    font-size: 30px;
+  }
+
+  .similar-experiences-item img {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+  }
+
+  .fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .fav img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .similar-experiences-item p {
+    color: white;
+    font-size: 11px;
   }
 
   .bottom-container {

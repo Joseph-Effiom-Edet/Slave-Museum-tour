@@ -12,7 +12,7 @@ var times = document.getElementsByName("times");
 var tp = 150;
 var tShirt = 35;
 var hoodie = 65;
-var total = 125;
+var total = 150;
 
 partyNumber.addEventListener("change", value);
 checkedTp.addEventListener("change", check);
@@ -20,10 +20,14 @@ checkedtShirt.addEventListener("change", checkTshirt);
 checkedHoodie.addEventListener("change", checkHoodie);
 
 function value() {
-  total = total *= this.value;
-  tp = tp *= this.value;
-  tShirt = tShirt *= this.value;
-  hoodie = hoodie *= this.value;
+  var tot = 150;
+  var ts = 35;
+  var h = 65;
+  var t = 150;
+  tp = t * this.value;
+  tShirt = ts * this.value;
+  hoodie = h * this.value;
+  total = tot * this.value;
   console.log(tp, tShirt, hoodie, total);
   tourPackage.innerHTML = `$${total}`;
   toTal.innerHTML = `$${total}`;
