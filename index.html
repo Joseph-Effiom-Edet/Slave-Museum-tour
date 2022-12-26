@@ -147,13 +147,6 @@
           </div>
 
           <div class="tab">
-            <p class="long">
-              The Slave Museum is about 4-5hrs straight drive from Lagos,
-              Nigeria depending on traffic and road conditions. Therefore, the
-              preferred mode of transportation is a drive to the docks on the
-              Island and then a 2hr boar ride. Group travel is included in your
-              price.
-            </p>
             <p class="transport">
               Please select your preferred transportation needs:
             </p>
@@ -213,6 +206,15 @@
             </p>
             <p class="checkbox">
               <input
+                id="eighted"
+                placeholder="Phone..."
+                oninput="this.className = ''"
+                type="checkbox"
+              />
+              <label for="eighted">Yes, we want both hoodies and T-Shirt $90 per set*</label>
+            </p>
+            <p class="checkbox">
+              <input
                 id="ninth"
                 placeholder="Phone..."
                 oninput="this.className = ''"
@@ -220,6 +222,7 @@
               />
               <label for="ninth">No thank you. </label>
             </p>
+            <p class="order">Must order at least 5 days in advance to have it ready for your tour.</p>
           </div>
 
           <div class="tab">
@@ -296,10 +299,11 @@
 
             <p class="subtotal">SubTotal: 
               <p id="subtotal">
-                <p class="tourPackage">Tour package <span name="times"></span>: <span id="tourPackage"></span></p>
-                <p class="roundTrip">Round Trip Transportation <span name="times"></span>: <span id="roundTrip">$0</span></p>
-                <p class="tShirtsPrice">T-Shirts <span name="times"></span>: <span id="tShirtsPrice">$0</span></p>
-                <p class="hoodiesPrice">Hoodies <span name="times"></span>: <span id="hoodiesPrice">$0</span></p>
+                <p class="tourPackage">Tour package <span class="times" name="times"></span>: <span id="tourPackage"></span></p>
+                <p class="roundTrip">Round Trip Transportation <span class="times" name="times"></span>: <span id="roundTrip">$0</span></p>
+                <p class="tShirtsPrice">T-Shirts <span class="times" name="times"></span>: <span id="tShirtsPrice">$0</span></p>
+                <p class="hoodiesPrice">Hoodies <span class="times" name="times"></span>: <span id="hoodiesPrice">$0</span></p>
+                <p class="bothPrice">Both Hoodies and T-Shirt <span class="times" name="times"></span>: <span id="bothPrice">$0</span></p>
               </p>
             </p>
             <p class="total">Total: <span id="total"></span></p>
@@ -332,7 +336,7 @@
         <div class="about-container">
         <div class="about">
           <h1 class="about-heading">About</h1>
-          <p class="about-desc">Explore the historical Badagry slave route, visit museums and ancient buildings that tell the story of Nigeria' evolution as a country. The story of 400 years of slavery cannot be told without a visit to the former slave port.<span id="dots">...</span><span id="more">The first point of call is the Seriki Abass Slave Baracoon and will be followed with a visit to the Mobee Slave Relics Museum. Afterwards, there will be a narrow walk to the Point of No Return (Gberefu Island) where the slaves were routed through to the ships to foreign countries. During the walk, there will be a brief stop at the Attenuation Well where slaves were made to drink magical waters that made them forget who they’re. There will also be a stopover at the beach front of the Point of No Return for a little rest and reflection. The First Storey Building in Nigeria and then the Heritage Museum are also part of the places to visit. </span></p>
+          <p class="about-desc">Explore the historical Badagry slave route, visit museums and ancient buildings that tell the story of Nigeria' evolution as a country. The story of 400 years of slavery cannot be told without a visit to the former slave port.<span id="dots">...</span><span id="more">The first point of call is the Seriki Abass Slave Baracoon and will be followed with a visit to the Mobee Slave Relics Museum. Afterwards, there will be a narrow walk to the Point of No Return (Gberefu Island) where the slaves were routed through to the ships to foreign countries. During the walk, there will be a brief stop at the Attenuation Well where slaves were made to drink magical waters that made them forget who they are. There will also be a stopover at the beach front of the Point of No Return for a little rest and reflection.</span></p>
           <button onclick="myFunction()" id="myBtn">Read more</button>
         </div>
         <div class="pricing">
@@ -340,7 +344,7 @@
             <span class="dollar">$150.00</span>
             per adult (price varies by group size)
           </p>
-          <button id="Check">Check availabilitty</button>
+         
         </div>
       </div>
       <div class="details">
@@ -351,10 +355,6 @@
         <div class="detail-item">
           <img src="./assets/halfTime.png" alt="">
           <p>Duration: 4-6 hours</p>
-        </div>
-        <div class="detail-item">
-          <img src="./assets/fullTime.png" alt="">
-          <p>Start time: Check availability</p>
         </div>
         <div class="detail-item">
           <img src="./assets/mobile.png" alt="">

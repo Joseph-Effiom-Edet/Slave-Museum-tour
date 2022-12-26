@@ -173,13 +173,13 @@ input.invalid {
 }
 
 .checkbox input {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
 }
 
 label {
   color: white;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 li {
@@ -201,27 +201,26 @@ li {
 }
 
 .slave-tour-title {
-  margin-left: 20px;
-  font-size: 25px;
+  text-align: center;
+  font-size: 30px;
   color: white;
   font-weight: 700;
 }
 
 .includes {
   font-size: 18px;
-  margin-left: 110px;
   color: white;
+  text-align: center;
 }
 
 .ul {
-  margin-bottom: 30px;
-  margin-top: 15px;
+  margin: 15px auto 30px auto;
 }
 
 .fill {
   color: white;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
   text-decoration: underline;
 }
 
@@ -229,40 +228,45 @@ li {
 .transport,
 .outings {
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   margin-bottom: 5px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 600;
 }
 .group-days,
-.personalise {
-  margin-top: 20px;
+.personalise,
+.order {
+  margin-top: 30px;
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   margin-bottom: 5px;
   font-family: "Quicksand", sans-serif;
-}
-
-.long {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-align: justify;
+  font-weight: 600;
 }
 
 .subtotal,
 .total {
   color: white;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 .tourPackage,
 .roundTrip,
 .tShirtsPrice,
-.hoodiesPrice {
+.hoodiesPrice,
+.bothPrice,
+.times,
+#tourPackage,
+#roundTrip,
+#tShirtsPrice,
+#hoodiesPrice,
+#bothPrice {
   color: white;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .success {
@@ -358,10 +362,12 @@ li {
 
 .about-heading {
   color: white;
+  font-size: 35px;
 }
 
 .about-desc {
   color: white;
+  font-size: 20px;
 }
 
 #more {
@@ -374,10 +380,11 @@ li {
 
 .price {
   color: white;
+  font-size: 20px;
 }
 
 .dollar {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -409,13 +416,13 @@ li {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 600;
   background-color: transparent;
 }
 
 .content {
-  padding: 0 18px 3px 18px;
+  padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -424,7 +431,7 @@ li {
 
 .content p {
   color: white;
-  font-size: 13px;
+  font-size: 20px;
   text-align: justify;
 }
 
@@ -433,7 +440,7 @@ li {
 }
 
 .content ul li {
-  font-size: 13px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -507,7 +514,7 @@ li {
 
 .similar-experiences-heading {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .similar-experiences-item-wrapper {
@@ -589,7 +596,7 @@ li {
 .bottom-form form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
   width: 550px;
 }
 
@@ -635,6 +642,7 @@ li {
   font-weight: 600;
   cursor: pointer;
   height: 40px;
+  margin-top: 10px;
 }
 
 .icons {
@@ -768,7 +776,7 @@ li {
 
   .fill-form {
     color: white;
-    font-size: 15px;
+    font-size: 35px;
     text-align: center;
   }
 
@@ -793,11 +801,6 @@ li {
 
   .similar-experiences-container {
     padding: 20px 10px;
-  }
-
-  .similar-experiences-heading {
-    color: white;
-    font-size: 30px;
   }
 
   .similar-experiences-item img {
