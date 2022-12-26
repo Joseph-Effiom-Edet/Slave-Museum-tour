@@ -5,6 +5,7 @@
   font-family: "Nunito", sans-serif;
 }
 
+/*Navbar styles*/
 .navbar-container {
   background: -moz-linear-gradient(
     90deg,
@@ -75,6 +76,7 @@ a {
   cursor: pointer;
 }
 
+/*Hero section styles*/
 .hero-container {
   background-color: #f5c645;
   padding: 0 50px;
@@ -99,6 +101,7 @@ a {
   padding-left: 50px;
 }
 
+/*Form section styles*/
 .form-container {
   background: -moz-linear-gradient(
     90deg,
@@ -324,7 +327,7 @@ li {
   background-color: #f5c645;
 }
 
-/*Description section*/
+/*Description section styles*/
 .description-container {
   border-top: 15px solid #f5c645;
   padding: 20px 50px;
