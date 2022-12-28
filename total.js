@@ -101,3 +101,16 @@ function checkBoth() {
     console.log("Unchecked");
   }
 }
+
+var validRegex =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+let email = document.getElementById("myEmail");
+email.addEventListener("change", function validate() {
+  if (!this.value.match(validRegex)) {
+    alert("Invalid email address!");
+
+    // and set the current valid status to false
+
+    window.location.reload();
+  }
+});
