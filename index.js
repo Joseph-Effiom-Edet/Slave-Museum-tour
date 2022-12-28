@@ -4,6 +4,7 @@ showTab(currentTab); // Display the current tab
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
+  console.log(x);
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -52,19 +53,13 @@ function nextPrev(n) {
 function validateForm() {
   // This function deals with validation of the form fields
 
-  var x, y, i, email, validRegex;
-  valid = true;
+  var x,
+    y,
+    i,
+    valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-  console.log(y);
-  validRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  // email = document.getElementById("myEmail");
 
-  // if (!email.value.match(validRegex)) {
-  //   alert("Invalid email address!");
-  //   window.location.reload();
-  // }
   // A loop that checks every input field in the current tab:
 
   // If a field is empty...
@@ -87,6 +82,17 @@ function validateForm() {
     valid = false;
   }
   if (y[3].value == "") {
+    let email = document.getElementById("myEmail");
+    email.addEventListener("change", function validate() {
+      let validRegex =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+      if (!this.value.match(validRegex)) {
+        alert("Invalid email address!");
+        window.location.reload();
+      }
+    });
+
     // add an "invalid" class to the field:
     y[3].className += " invalid";
     // and set the current valid status to false
