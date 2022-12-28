@@ -86,7 +86,7 @@ function validateForm() {
     // and set the current valid status to false
     valid = false;
   }
-  if (y[3].value == "" || !y[3].value.match(validRegex)) {
+  if (y[3].value == "") {
     // add an "invalid" class to the field:
     y[3].className += " invalid";
     // and set the current valid status to false
