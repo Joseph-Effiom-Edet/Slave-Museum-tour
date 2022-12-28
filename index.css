@@ -5,6 +5,7 @@
   font-family: "Nunito", sans-serif;
 }
 
+/*Navbar styles*/
 .navbar-container {
   background: -moz-linear-gradient(
     90deg,
@@ -75,21 +76,19 @@ a {
   cursor: pointer;
 }
 
+/*Hero section styles*/
 .hero-container {
-  background-color: #f5c645;
-  padding: 0 50px;
+  background-color: #241e20;
 }
 
 .hero-wrapper {
-  width: 100%;
-  height: 700px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-wrapper video {
   flex: 2;
-  padding-right: 150px;
 }
 
 .hero-wrapper h1 {
@@ -99,7 +98,9 @@ a {
   padding-left: 50px;
 }
 
+/*Form section styles*/
 .form-container {
+  border-top: 15px solid #f5c645;
   background: -moz-linear-gradient(
     90deg,
     rgba(228, 74, 45, 1) 0%,
@@ -324,7 +325,7 @@ li {
   background-color: #f5c645;
 }
 
-/*Description section*/
+/*Description section styles*/
 .description-container {
   border-top: 15px solid #f5c645;
   padding: 20px 50px;
@@ -406,6 +407,36 @@ li {
 
 .detail-item p {
   color: white;
+}
+
+.collapsible-container {
+  border-top: 15px solid #f5c645;
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E44A2D', endColorstr='#241E20', GradientType=0 );
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(36, 30, 32, 1) 0%,
+    rgba(228, 74, 45, 1) 100%
+  );
 }
 
 .collapsible {
@@ -571,7 +602,7 @@ li {
 
 .bottom-wrapper {
   display: flex;
-  gap: 50px;
+  gap: 25px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -596,7 +627,6 @@ li {
 .bottom-form form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 550px;
 }
 
@@ -737,8 +767,8 @@ li {
     cursor: pointer;
   }
 
-  .hero-container {
-    background-color: #f5c645;
+  /* .hero-container {
+    background-color: #241e20;
     padding: 0 10px;
   }
 
@@ -756,7 +786,7 @@ li {
     width: 340px;
     height: 350px;
     margin-left: 10px;
-  }
+  } */
 
   .hero-wrapper h1 {
     display: none;
@@ -782,6 +812,7 @@ li {
 
   .description-container {
     padding: 20px 10px;
+    border-top: 0;
   }
 
   .about {
@@ -840,7 +871,7 @@ li {
 
   .bottom-wrapper {
     flex-direction: column;
-    gap: 25px;
+    gap: 5px;
     width: 50%;
   }
 
