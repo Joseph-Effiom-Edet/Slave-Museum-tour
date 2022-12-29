@@ -121,7 +121,6 @@ a {
     rgba(36, 30, 32, 1) 100%
   );
 
-  /* ie 6-9 */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241E20', endColorstr='#E44A2D', GradientType=0 );
 
   /* ie 10+ */
